@@ -1,0 +1,286 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.conteneur16{
+    display: grid;
+    grid-template-columns: repeat(15, minmax(0,1fr));
+    gap: 5px;
+}
+
+.marges{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.head{
+    overflow: hidden;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    background: white;
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    display: block !important;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.logo{
+    max-height: auto;
+}
+.conteneurLogo{
+    grid-column: 8 / 9;
+}
+.conteneurTrie{
+    width: 50%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.iconElements{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 11%;
+    cursor: pointer;
+}
+.iconElements:hover{
+    border-bottom: solid 2px black;
+}
+
+.conteneurPrincipal{
+    width: 90%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.708);
+    margin: 50px 0px 50px 0px;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+.caseDragon{
+    background-color: white;
+    height: auto;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: rgba(75, 75, 75, 0.3) 0px 19px 38px, rgba(119, 119, 119, 0.22) 0px 15px 12px;
+}
+.poinçon{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+    display: inline-block;
+}
+.nomDuDragon{
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 0px 0px 15px;
+    height: 30px;
+    vertical-align: top;
+}
+.flechePliable{
+    height: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    float: inline-end;
+}
+.caseDragon > p{
+    border-top:1px solid rgba(0, 0, 0, 0.305);
+    width: 80%;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bttnGenerique{
+    background: rgba(0, 0, 0, 0.300);
+    border: none;
+    color: black;
+    display: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 12px 80px 12px 80px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .bttnGenerique:hover{
+    background:  rgba(0, 0, 0, 0.700);
+    color: white;
+  }
+
+  
+/* FORMULAIRE */
+.content{
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 100%;
+    text-align: center !important;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+  }
+  
+.formulaire {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .descriptifCaseForm{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  form div {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 25px;
+    /* white-space: pre-wrap; */
+    }
+    
+    form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+    }
+    
+    form div > input, form div > select, form div > textarea {
+    width: 50%;
+    display: center;
+    margin: auto;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+    }
+    
+    form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+    }
+    
+    
+    form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+    }
+    
+    form div > input::placeholder, form div > textarea::placeholder {
+    color: black;
+    }
+    
+    form div > select:invalid {
+    color: black;
+    }
+
+
+  
+    
+@media (max-width: 1200px) { 
+    .conteneurTrie{
+        width: 60%;
+        height: 40px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 100px;
+        box-shadow: rgba(75, 75, 75, 0.3) 0px 19px 38px, rgba(119, 119, 119, 0.22) 0px 15px 12px;
+    }
+
+ }
+
+ @media (max-width: 800px) { 
+    .disparaitMobile{
+        display: none;
+    }
+
+    .marges{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .logo{
+        max-height: 50px;
+    }
+
+    .conteneurPrincipal{
+        margin: 100px 0px 20px 0px;
+    }
+
+    .conteneurTrie{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0 !important;
+        left: 0;
+        padding: 10px 0px 10px 0px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    
+    .caseDragon{
+        width: 93%;
+        margin-left: 0%;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .poinçon{
+        height: 25px;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .nomDuDragon{
+        font-size: 16px;
+        height: 25px;
+        margin: 10px 50px 0px 5px;
+    }
+
+    .caseDragon > p{
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .flechePliable{
+        margin-top: 0px;
+    }
+
+    .bttnGenerique{
+        margin-bottom: 10px;
+        color: white;
+      }
+/* FORMULAIRE */
+.content{
+    width: 93%;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+
+  form div {
+    width: 80%;
+    min-height: 30px;
+    margin-left: 10%;
+    
+    }
+    
+  form div > input, form div > select, form div > textarea {
+    width: 90%;
+    }
+ }
+
+
+ /* 
+ RESTE A FAIRE
+ [x] formulaire
+ [x] ajouter du js pour les noms de dragon
+ [] faire les cases caractéristique de manière dynamique avec le fichier js
+ [] gerer le systhème de filtre
+ [] ajouter des animations
+ 
+ */

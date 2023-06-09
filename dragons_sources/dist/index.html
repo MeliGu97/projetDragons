@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main"></div>
+    <header>
+        <div class="head">
+            <nav class="conteneur16">
+                <div class="conteneurLogo">
+                    <img class="logo" src="icons8-dragon-78.png" alt="logo d'un dragon"/>
+                </div>
+                <!-- <button class="changeTheme">☀☽</button> -->
+            </nav>
+        </div>
+    </header>
+    <main class="marges">
+        <section>
+            <h2 class="disparaitMobile">Trier les dragons selon leur type : </h2>
+            <article class="conteneurTrie">
+                <img class="iconElements" src="icons8-élément-feu-64.png" alt="icon du feu"/>
+                <img class="iconElements" src="icons8-eau-64.png" alt="icon de l'eau"/>
+                <img class="iconElements" src="icons8-vent-64.png" alt="icon du vent"/>
+                <img class="iconElements" src="icons8-roche-64.png" alt="icon de la terre"/>
+                <img class="iconElements" src="icons8-question-bouclier-64.png" alt="icon pour signaler un dragon de type inconnu"/>
+            </article>
+        </section>
+        <section class="conteneurPrincipal">
+
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-élément-feu-64.png" alt="icon du feu"/>
+                <h2 class="nomDuDragon" id="dragon1"></h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag1"
+                    onclick="elementVisible('caraDrag1');elementVisible('bttnrepliCaraDrag1');elementInvisible('bttndepliCaraDrag1')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag1" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag1');elementInvisible('caraDrag1');elementInvisible('bttnrepliCaraDrag1')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag1" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-eau-64.png" alt="icon de l'eau"/>
+                <h2 class="nomDuDragon" id="dragon2"></h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag2"
+                    onclick="elementVisible('caraDrag2');elementVisible('bttnrepliCaraDrag2');elementInvisible('bttndepliCaraDrag2')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag2" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag2');elementInvisible('caraDrag2');elementInvisible('bttnrepliCaraDrag2')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag2" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-question-bouclier-64.png" alt="icon pour signaler un dragon de type inconnu"/>
+                <h2 class="nomDuDragon">Bolla</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag3"
+                    onclick="elementVisible('caraDrag3');elementVisible('bttnrepliCaraDrag3');elementInvisible('bttndepliCaraDrag3')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag3" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag3');elementInvisible('caraDrag3');elementInvisible('bttnrepliCaraDrag3')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag3" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-élément-feu-64.png" alt="icon du feu"/>
+                <h2 class="nomDuDragon">Drogon</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag4"
+                    onclick="elementVisible('caraDrag4');elementVisible('bttnrepliCaraDrag4');elementInvisible('bttndepliCaraDrag4')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag4" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag4');elementInvisible('caraDrag4');elementInvisible('bttnrepliCaraDrag4')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag4" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-question-bouclier-64.png" alt="icon pour signaler un dragon de type inconnu"/>
+                <h2 class="nomDuDragon">Katla</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag5"
+                    onclick="elementVisible('caraDrag5');elementVisible('bttnrepliCaraDrag5');elementInvisible('bttndepliCaraDrag5')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag5" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag5');elementInvisible('caraDrag5');elementInvisible('bttnrepliCaraDrag5')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag5" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-question-bouclier-64.png" alt="icon pour signaler un dragon de type inconnu"/>
+                <h2 class="nomDuDragon">Saphira</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag6"
+                    onclick="elementVisible('caraDrag6');elementVisible('bttnrepliCaraDrag6');elementInvisible('bttndepliCaraDrag6')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag6" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag6');elementInvisible('caraDrag6');elementInvisible('bttnrepliCaraDrag6')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag6" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-eau-64.png" alt="icon de l'eau"/>
+                <h2 class="nomDuDragon">Thorn</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag7"
+                    onclick="elementVisible('caraDrag7');elementVisible('bttnrepliCaraDrag7');elementInvisible('bttndepliCaraDrag7')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag7" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag7');elementInvisible('caraDrag7');elementInvisible('bttnrepliCaraDrag7')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag7" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-eau-64.png" alt="icon de l'eau"/>
+                <h2 class="nomDuDragon">Tiamat</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag8"
+                    onclick="elementVisible('caraDrag8');elementVisible('bttnrepliCaraDrag8');elementInvisible('bttndepliCaraDrag8')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag8" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag8');elementInvisible('caraDrag8');elementInvisible('bttnrepliCaraDrag8')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag8" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+            <article class="caseDragon">
+                <img class="poinçon" src="icons8-élément-feu-64.png" alt="icon du feu"/>
+                <h2 class="nomDuDragon">Viserion</h2>
+                <p>Caractéristiques</p>
+                <img id="bttndepliCaraDrag9"
+                    onclick="elementVisible('caraDrag9');elementVisible('bttnrepliCaraDrag9');elementInvisible('bttndepliCaraDrag9')"
+                    class="flechePliable" src="icons8-fleche-vers-bas.png" />
+                <img id="bttnrepliCaraDrag9" style="display: none;"
+                    onclick="elementVisible('bttndepliCaraDrag9');elementInvisible('caraDrag9');elementInvisible('bttnrepliCaraDrag9')"
+                    class="flechePliable" src="icons8-fleche-vers-haut.png" />
+                <div id="caraDrag9" style="display: none;">
+                    <p>ici les caractéristiques</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="content">
+                <div class="texte-clair">
+                    <a href="#ajoutDrag"><button onclick="elementVisible('ajoutDrag')"
+                            class="bttnGenerique"  data-message="Un bouton pour ajouter un dragon">Ajoutez un dragon</button></a>
+                </div>
+                <div id="ajoutDrag" class="texte-clair container" style="display: none;">
+                    <div class="formulaire">
+                        <form action="/page-traitement-donnees" method="post">
+                            <div>
+                                <p class="descriptifCaseForm">Son nom : </p>
+                                <label for="nom"></label>
+                                <input type="text" id="nom" name="nom" placeholder="Roucoucou" required>
+                            </div>
+
+                            <div>
+                                <p class="descriptifCaseForm">Son type : </p>
+                                <label for="element" required style="font-weight: normal;">
+                                    <input type="radio" name="element" value="feu"> Feu
+                                    <input type="radio" name="element" value="eau"> Eau
+                                    <input type="radio" name="element" value="air"> Air
+                                    <input type="radio" name="element" value="terre"> Terre
+                                    <input type="radio" name="element" value="inconnu"> Inconnu
+                                </label>
+                            </div>
+
+                            <div>
+                                <p class="descriptifCaseForm">Sa puissance comprise entre 0 et 20 : </p>
+                                <label for="forces"></label>
+                                <input type="number" id="forces" name="forces" min="0" max="20" placeholder="12"
+                                    required>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="bttnGenerique" data-message="Un bouton pour valider l'ajout d'un dragon">Ajoutez</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+<!-- <script src="./bundle.js"></script> -->
+<script>
+    // BOOLEEN MONTRER - CACHER 
+    function moduleVisible(idEl) {
+        document.getElementById(idEl).style.display = "grid";
+    }
+
+    function elementVisible(idEl) {
+        document.getElementById(idEl).style.display = "block";
+    }
+    function elementInvisible(idEl) {
+        document.getElementById(idEl).style.display = "none";
+    }
+
+    const dragons = {
+        names: [
+            { id: 1, name: "Apalala", element: "fire" },
+            { id: 2, name: "Balaur", element: "water" },
+            { id: 3, name: "Bolla" },
+            { id: 4, name: "Drogon", elemnt: "fire" },
+            { id: 5, name: "Katla" },
+            { id: 6, name: "Saphira" },
+            { id: 7, name: "Thorn", elemnt: "water" },
+            { id: 8, name: "Tiamat", elemnt: "water" },
+            { id: 9, name: "Viserion", elemnt: "fire" },
+            { id: 10, name: "Y Ddraig Goch", elemnt: "fire" },
+            { id: 11, name: "Yinglong", elemnt: "water" },
+            { id: 12, name: "Zmey Gorynych", elemnt: "fire" },
+            { id: 13, name: "Zirnitra", elemnt: "water" },
+            { id: 14, name: "Zmey", elemnt: "fire" },
+            { id: 15, name: "Zilant", elemnt: "water" },
+            { id: 16, name: "Zmeu", elemnt: "fire" },
+            { id: 17, name: "Wyvern", elemnt: "water" },
+            { id: 18, name: "Vritra", elemnt: "fire" },
+            { id: 19, name: "Vrtra", elemnt: "water" },
+            { id: 20, name: "Vouivre", elemnt: "fire" },
+
+        ],
+        count: 3,
+    }
+//  PAS OPTIMAL DU TOUT REFAIRE QUELQUE CHOSE DE DYNAMIQUE
+    document.getElementById('dragon1').innerHTML = dragons.names[0].name;
+    document.getElementById('dragon2').innerHTML = dragons.names[1].name;
+
+</script>
+
+</html>
