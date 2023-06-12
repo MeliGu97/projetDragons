@@ -34,9 +34,10 @@ html {
 .conteneurTrie{
     width: 50%;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-top: 100px;
+    box-shadow: rgba(75, 75, 75, 0.3) 0px 19px 38px, rgba(119, 119, 119, 0.22) 0px 15px 12px;
 }
 .iconElements{
     height: 30px;
@@ -184,10 +185,8 @@ html {
     .conteneurTrie{
         width: 60%;
         height: 40px;
-        background-color: white;
         border-radius: 20px;
         margin-top: 100px;
-        box-shadow: rgba(75, 75, 75, 0.3) 0px 19px 38px, rgba(119, 119, 119, 0.22) 0px 15px 12px;
     }
 
  }
@@ -213,7 +212,6 @@ html {
     .conteneurTrie{
         width: 100%;
         height: 40px;
-        background-color: rgb(255, 255, 255);
         border-radius: 0px;
         overflow: hidden;
         position: fixed;
